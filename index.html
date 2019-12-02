@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>JUUL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <section id="screen1" class="gate">
+      <div class="header">
+        <img class="logo" src="./img/logo.svg" alt="logo" />
+      </div>
+
+      <div class="content">
+        <img class="logo" src="./img/age.png" alt="more than 18?" />
+        <div class="actions">
+          <a class="btn" id="less18-btn">
+            <img class="logo" src="./img/no.png" alt="more than 18?" />
+          </a>
+          <a class="btn" id="more18-btn">
+            <img class="logo" src="./img/yes.png" alt="more than 18?" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen2" class="gate">
+      <div class="header">
+        <img class="logo" src="./img/logo.svg" alt="logo" />
+      </div>
+
+      <div class="content">
+        <img class="logo" src="./img/less18.png" alt="more than 18?" />
+        <div class="actions">
+          <a class="btn" id="main-menu-btn">
+            <img class="logo" src="./img/main-menu.png" alt="more than 18?" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen3" class="gate">
+      <div class="header">
+        <img class="logo" src="./img/logo.svg" alt="logo" />
+        <a id="close-video">
+          <img class="logo" src="./img/close.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="content">
+        <video
+          autoplay
+          loop
+          muted
+          height="670"
+          width="1146"
+        >
+          <source src="./img/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

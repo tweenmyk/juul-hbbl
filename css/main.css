@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+section:not(:first-of-type) {
+  display: none;
+}
+
+.gate {
+  display: flex;
+  flex-direction: column;
+  width: 1146px;
+  height: 670px;
+  position: relative;
+}
+
+.content {
+  width: 1146px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  margin-top: 40px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 48px;
+}
+
+.btn {
+  display: flex;
+  padding: 18px 50px;
+  background: black;
+}
+
+.btn ~ .btn {
+  margin-left: 40px;
+}
