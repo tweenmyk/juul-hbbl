@@ -56,3 +56,9 @@ section:not(:first-of-type) {
 .btn ~ .btn {
   margin-left: 40px;
 }
+
+#close-video {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+}
